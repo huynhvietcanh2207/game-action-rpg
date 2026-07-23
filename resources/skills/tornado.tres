@@ -1,7 +1,7 @@
-[gd_resource type="Resource" script_class="SkillData" load_steps=3 format=3]
+[gd_resource type="Resource" script_class="SkillData" format=3 uid="uid://l7sjdsuh1exs"]
 
-[ext_resource type="Texture2D" path="res://assets/skills/skill loc xoay/loc_xoay_projectile.png" id="1_projectile"]
-[ext_resource type="Script" path="res://resources/skill_data.gd" id="2_script"]
+[ext_resource type="Texture2D" uid="uid://ce7jwkceehb5u" path="res://assets/skills/skill loc xoay/loc_xoay_projectile.png" id="1_projectile"]
+[ext_resource type="Script" uid="uid://bika07e7agkw3" path="res://resources/skill_data.gd" id="2_script"]
 
 [resource]
 script = ExtResource("2_script")
@@ -11,8 +11,6 @@ cooldown = 3.0
 mana_cost = 20.0
 damage = 120.0
 description = "Triệu hồi một cơn lốc xoáy xanh sấm sét khổng lồ bay chậm và xuyên qua mọi kẻ địch."
-effect_type = "damage"
-has_projectile = true
 projectile_speed = 180.0
 projectile_texture = ExtResource("1_projectile")
 proj_frame_count = 12

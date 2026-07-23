@@ -52,8 +52,8 @@ func _spawn_monster() -> void:
 	var monster = selected_scene.instantiate()
 	monster.global_position = spawn_pos
 	
-	# Thêm vào node chứa quái của map
-	var monsters_node = get_node_or_null("/root/MapPlayground/Monsters")
+	# Thêm vào node chứa quái của thế giới
+	var monsters_node = get_node_or_null("/root/Main/Entities/Monsters")
 	if monsters_node:
 		monsters_node.add_child(monster)
 	else:

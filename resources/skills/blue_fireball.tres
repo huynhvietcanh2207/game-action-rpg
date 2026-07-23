@@ -1,28 +1,20 @@
-[gd_resource type="Resource" script_class="SkillData" load_steps=4 format=3]
+[gd_resource type="Resource" script_class="SkillData" format=3 uid="uid://be25iew3b3lh1"]
 
-[ext_resource type="Texture2D" path="res://assets/skills/skill blue/blue_fireball_explosion.png" id="1_explosion"]
-[ext_resource type="Texture2D" path="res://assets/skills/skill blue/blue_fireball_projectile.png" id="2_projectile"]
-[ext_resource type="Script" path="res://resources/skill_data.gd" id="3_script"]
+[ext_resource type="Texture2D" uid="uid://cw0m6bhw7nvq7" path="res://assets/skills/skill blue/blue_fireball_explosion.png" id="1_explosion"]
+[ext_resource type="Texture2D" uid="uid://bdq1aaq71qhk3" path="res://assets/skills/skill blue/blue_fireball_projectile.png" id="2_projectile"]
+[ext_resource type="Script" uid="uid://bika07e7agkw3" path="res://resources/skill_data.gd" id="3_script"]
 
 [resource]
 script = ExtResource("3_script")
 skill_name = "Thương Hải Lam Hỏa"
 slot_number = 3
-cooldown = 1.0
 mana_cost = 10.0
 damage = 180.0
 description = "Giải phóng một ngọn lửa lam bay và phát nổ khi chạm mục tiêu."
-effect_type = "damage"
-has_projectile = true
-projectile_speed = 400.0
 projectile_texture = ExtResource("2_projectile")
 proj_frame_count = 6
 proj_anim_speed = 0.08
-rotate_to_direction = true
 proj_start_frames = 1
-proj_loop_frames = 4
 proj_end_frames = 1
-has_explosion = true
 explosion_texture = ExtResource("1_explosion")
 exp_frame_count = 4
-exp_anim_speed = 0.08

@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://m1a2i3n4s5c6e"]
+
+[ext_resource type="Script" path="res://scripts/systems/main.gd" id="1_script"]
+[ext_resource type="Script" path="res://scripts/systems/monster_spawner.gd" id="2_spawner"]
+[ext_resource type="PackedScene" path="res://scenes/systems/hud_ui.tscn" id="3_hud"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_script")
+
+[node name="MapContainer" type="Node2D" parent="."]
+
+[node name="Entities" type="Node2D" parent="."]
+
+[node name="PlayerContainer" type="Node2D" parent="Entities"]
+
+[node name="Monsters" type="Node2D" parent="Entities"]
+
+[node name="MonsterSpawner" type="Node2D" parent="."]
+script = ExtResource("2_spawner")
+
+[node name="HUDUI" parent="." instance=ExtResource("3_hud")]
