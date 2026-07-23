@@ -1,18 +1,13 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# Godot 4+ specific ignores
+.godot/
+/android/
+export_presets.cfg
 
-# Other files and folders
-.settings/
+# Imported resources
+*.translation
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
-
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# System & IDE temporary files
+.DS_Store
+Thumbs.db
+*.tmp
+scratch_*.py
