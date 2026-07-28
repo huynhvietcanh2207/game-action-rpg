@@ -26,19 +26,19 @@ collision_mask = 3
 script = ExtResource("1_script")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(0.32, 0.32)
+scale = Vector2(0.2, 0.2)
 sprite_frames = ExtResource("2_frames")
 animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 2)
+position = Vector2(0, 1)
 shape = SubResource("CircleShape2D_slime")
 
 [node name="HealthBar" type="ProgressBar" parent="."]
-offset_left = -16.0
-offset_top = -20.0
-offset_right = 16.0
-offset_bottom = -16.0
+offset_left = -10.0
+offset_top = -12.0
+offset_right = 10.0
+offset_bottom = -9.0
 theme_override_styles/background = SubResource("StyleBoxFlat_bg")
 theme_override_styles/fill = SubResource("StyleBoxFlat_fill")
 value = 100.0

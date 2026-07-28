@@ -25,25 +25,25 @@ collision_layer = 2
 collision_mask = 3
 script = ExtResource("1_script")
 max_hp = 800.0
-walk_speed = 90.0
-chase_speed = 150.0
+walk_speed = 45.0
+chase_speed = 80.0
 attack_damage = 20.0
 detect_range = 280.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(0.32, 0.32)
+scale = Vector2(0.22, 0.22)
 sprite_frames = ExtResource("2_frames")
 animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 2)
+position = Vector2(0, 1)
 shape = SubResource("CircleShape2D_slime_dark")
 
 [node name="HealthBar" type="ProgressBar" parent="."]
-offset_left = -16.0
-offset_top = -20.0
-offset_right = 16.0
-offset_bottom = -16.0
+offset_left = -11.0
+offset_top = -13.0
+offset_right = 11.0
+offset_bottom = -10.0
 theme_override_styles/background = SubResource("StyleBoxFlat_bg")
 theme_override_styles/fill = SubResource("StyleBoxFlat_fill")
 value = 100.0

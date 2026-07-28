@@ -36,6 +36,7 @@ func setup(data: SkillData, spawn_pos: Vector2, dir: Vector2) -> void:
 	skill_data = data
 	direction = dir
 	global_position = spawn_pos
+	scale = Vector2(0.35, 0.35)
 	
 	# Quay sprite theo hướng bay nếu cấu hình cho phép
 	if dir != Vector2.ZERO:

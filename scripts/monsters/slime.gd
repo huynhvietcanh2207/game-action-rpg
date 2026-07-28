@@ -13,8 +13,8 @@ enum State {
 }
 
 @export var max_hp: float = 500.0
-@export var walk_speed: float = 70.0
-@export var chase_speed: float = 120.0
+@export var walk_speed: float = 35.0
+@export var chase_speed: float = 65.0
 @export var attack_damage: float = 10.0
 @export var attack_range: float = 35.0
 @export var detect_range: float = 250.0
